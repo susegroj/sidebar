@@ -1,0 +1,22 @@
+
+.layout {
+  display: grid;
+  grid-template-areas: 
+    'sidebar header'
+    'sidebar page'
+    'sidebar footer';
+  grid-template-columns: auto 1fr;
+  grid-template-rows: min-content 1fr min-content;
+
+  min-height: 100%;
+  width: 100%;
+  
+  .main-content {
+    background: rgba(var(--blue));
+    color: var(--white);
+    grid-area: page;
+    
+    padding: 1rem;
+    
+  }
+}

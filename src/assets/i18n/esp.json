@@ -1,0 +1,28 @@
+{
+  "app": {
+    "name": "Sidebar",
+    "facebook": "#",
+    "whatsapp": "1111111111",
+    "instagram": "#",
+    "phone": "1111111111",
+    "mail": "susegroj@gmail.com",
+    "address": "#",
+    "devs": {
+      "name": "Powered by Red Minds | Contact us",
+      "mail": "susegroj@gmail.com",
+      "website": "https://github.com/susegroj"
+    }
+  },
+  "tabs": {
+    "received": "Recibidos",
+    "marked": "Destacados",
+    "hold": "Pospuestos",
+    "sent": "Enviados",
+    "all": "Todos",
+    "trash": "Papelera",
+    "notFound": "¡Oops! Nada por aquí"
+  },
+  "commons": {
+    "goBackHome": "Ir al inicio"
+  }
+}

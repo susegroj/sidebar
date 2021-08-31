@@ -1,0 +1,11 @@
+$white: #fffffe;
+$black: 14, 23, 44;
+$blue: 15, 86, 179;
+
+
+:root {
+  --white: #{$white};
+  --black: #{$black};
+  --blue: #{$blue};
+}
+

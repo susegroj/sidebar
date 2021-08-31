@@ -1,0 +1,57 @@
+/* stylelint-disable selector-no-qualifying-type */
+@import '@styles/mixins';
+
+.sidebar {
+  @include flex(column, nowrap);
+  background: var(--white);
+  bottom: 0;
+  gap: 0.5rem;
+  grid-area: sidebar;
+  
+  padding: 2rem 2rem 2rem 0;
+  transition: all 0.3s ease;
+
+  &.hide {
+    padding: 2rem 1rem 0 0;
+
+    span.label,
+    .section,
+    .sidebar-header h5 {
+      width: 0%;
+    }
+  }
+
+  &-header {
+    @include flex(row, nowrap, flex-start, center);
+    gap: 1rem;
+    padding: 0 1rem 1rem 2rem;
+
+    .icon {
+      cursor: pointer;
+    }
+  }
+
+  .section {
+    font-weight: bold;
+    padding: 1rem 1rem 1rem 2rem;
+  }
+
+  .option {
+    @include flex(row, nowrap, flex-start, center);
+    gap: 1rem;
+    padding: 1rem 1rem 1rem 2rem;
+    width: 100%;
+
+    &.active {
+      background: rgba(var(--blue), 0.3);
+      border-radius: 0 1rem 1rem 0;
+
+      .label {
+        color: rgba($color: var(--blue), $alpha: 1);
+      }
+    }
+  }
+
+}
+
+
